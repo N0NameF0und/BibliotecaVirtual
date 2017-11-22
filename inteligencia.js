@@ -12,6 +12,7 @@ $(document).ready(function(){
    function calcularNorma(vector){
        norma = 0;
        for(i=0;i < vector.length ; i++) {
+           norma = norma+(vector[i]+vector[i])
 
        }
        norma = vector;
