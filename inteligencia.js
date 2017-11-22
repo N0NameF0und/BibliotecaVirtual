@@ -13,8 +13,7 @@ $(document).ready(function(){
        norma = 0;
        for(i=0;i < vector.length ; i++) {
            norma = norma+(vector[i]+vector[i])
-
        }
-       norma = vector;
+       norma = Math.sqrt(norma)
        return norma;
    }
