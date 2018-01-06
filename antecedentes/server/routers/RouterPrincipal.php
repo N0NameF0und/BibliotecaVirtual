@@ -14,29 +14,25 @@ class RouterPrincipal extends RouterBase
 {
    function route(){
       switch(strtolower($this->datosURI->controlador)){
-         case "detalles":
-            $routerDetalles = new RouterDetalles();
-            return json_encode($routerDetalles->route());
+         case "cuenta":
+            $routerCuenta = new RouterCuenta();
+            return json_encode($routerCuenta->route());
             break;
-         case "informacioncompleta":
-            $routerInformacionCompleta = new RouterInformacionCompleta();
-            return json_encode($routerInformacionCompleta->route());
+         case "recursos":
+            $routerRecursos = new RouterRecursos();
+            return json_encode($routerRecursos->route());
             break;
-         case "lugares":
-            $routerLugares = new RouterLugares();
-            return json_encode($routerLugares->route());
+         case "solicitudrecursos":
+            $routerSolicitudRecursos = new RouterSolicitudRecursos();
+            return json_encode($routerSolicitudRecursos->route());
             break;
-         case "provincia":
-            $routerProvincia = new RouterProvincia();
-            return json_encode($routerProvincia->route());
+         case "tiporecursos":
+            $routerTipoRecursos = new RouterTipoRecursos();
+            return json_encode($routerTipoRecursos->route());
             break;
-         case "registro":
-            $routerRegistro = new RouterRegistro();
-            return json_encode($routerRegistro->route());
-            break;
-         case "usuarios":
-            $routerUsuarios = new RouterUsuarios();
-            return json_encode($routerUsuarios->route());
+         case "usuario":
+            $routerUsuario = new RouterUsuario();
+            return json_encode($routerUsuario->route());
             break;
          default:
             $routerEspeficias = new RouterFuncionalidadesEspecificas();

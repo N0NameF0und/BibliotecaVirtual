@@ -4,8 +4,7 @@ class ConexionBaseDatos {
     private static $array = array();
     public static function DatosConexiones(){
         $array = array();
-        $array[] = new DatosConexion("pruebasITSY","172.16.0.9","ignug","prueba","12345678");
-        $array[] = new DatosConexion("local","localhost","ignug","prueba","12345678");
+         $array[] = new DatosConexion("local","sql313.byethost32.com","b32_21140731_Biblioteca","b32_21140731","arbol123");
         return $array;
     }
 }
